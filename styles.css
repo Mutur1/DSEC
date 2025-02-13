@@ -1,75 +1,122 @@
+@font-face {
+  font-family: "Baguede";
+  src: url("assets/fonts/BaguedeRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
-body{
-    background-color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    color: #48114A;
-    margin:200px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Baguede";
+  height: 100vh;
 }
-header{
-    width: 1234px;
-    height: 137px;
-    border-radius: 68.5em;
-    margin: 0 250px;
-    background-color:#48114a;
-    
+
+.dsec-btn {
+  border-radius: 54.5px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  width: 260px;
+  height: 4rem;
+  font-size: 1.25rem;
 }
-nav>ul{
-    list-style-type: none;
-    margin:20px 80px 20px 650px;
-    padding:0;
-    overflow: hidden;
-    background-color: #390b3a;
-    border-radius: 46.5em;
+
+.hero {
+  background-image: url("assets/img/HeroBg_Svg.svg");
+  padding: 5rem;
 }
-li{
-    float:left;
-    padding-left:14px 32px;
-    margin: auto;
-    
-    
+nav {
+  height: 5rem;
+  background-color: #481f4a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 46.5px;
+  padding: 0 2rem;
 }
-li a{
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    margin-top: 5px;
-    margin: 5px 5px 0;
-    text-decoration: none;
-    font-size: 24px;
+
+nav img {
+  height: 2rem;
 }
-li a:hover{
-    background-color: #f1b04c;
-    color: #390b3a;
-    border-radius: 30px;
-    margin: 10px 0 2.5px;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  width: 50%;
 }
-.active{
-    background-color: #f1b04c;
+
+nav li {
+  display: flex;
+  justify-content: space-between;
 }
-.hero{
-    width: 1440px;
-    height: 963px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #48114A;
-    padding: 0200px 90px 0 90px;
-    color:aliceblue;
+
+li a {
+  display: inline-block;
+  color: white;
+  padding: 14px 28px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 1rem;
 }
-.name{
-    font-size: 105px;
-    padding: 70px 70px 70px;
-    
+
+li a:hover {
+  background-color: #f1b04c;
+  cursor: pointer;
+  color: #390b3a;
+  border-radius: 30px;
 }
-.getstarted{
-    width: 337px;
-    height: 108px;
-    font-size: 32px;
-    border-radius: 54.5rem;
-    border: 0;
-    color: #390b3a;
+.active {
+  background-color: #f1b04c;
+  color: #390b3a;
+  border-radius: 30px;
 }
-.getstarted:hover{
-    background-color: #390b3a;
-    color: white;
-    border-radius: 54.5rem;
+
+.descr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid red;
+  justify-content: space-between;
 }
+
+.descr .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: -rem; */
+}
+
+.descr .text p {
+  font-size: 6rem;
+  color: white;
+  line-height: 5.5rem;
+}
+
+.descr img {
+  height: 36rem;
+}
+/*
+
+.name {
+  font-size: 105px;
+  padding: 70px 70px 70px;
+}
+.getstarted {
+  width: 337px;
+  height: 108px;
+  font-size: 32px;
+  border-radius: 54.5rem;
+  border: 0;
+  color: #390b3a;
+}
+.getstarted:hover {
+  background-color: #390b3a;
+  color: white;
+  border-radius: 54.5rem;
+} */
