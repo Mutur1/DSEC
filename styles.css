@@ -11,6 +11,12 @@ body {
   font-family: "Baguede";
   height: 100vh;
 }
+p {
+  font-size: 1rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
 
 .dsec-btn {
   border-radius: 54.5px;
@@ -22,6 +28,11 @@ body {
   width: 260px;
   height: 4rem;
   font-size: 1.25rem;
+  color: #390b3a;
+}
+.dsec-btn:hover {
+  background-color:#390b3a;
+  color:white;
 }
 
 .hero {
@@ -81,7 +92,7 @@ li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
- 
+
   justify-content: space-between;
 }
 
@@ -101,22 +112,138 @@ li a:hover {
 .descr img {
   height: 36rem;
 }
-/*
+.traits {
+  background-color: #F4DEFA;
+  height: 150%;
+  margin-bottom: 10%;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 25px;
+  color: #481f4a;
+}
 
-.name {
-  font-size: 105px;
-  padding: 70px 70px 70px;
+/* 2nd section*/
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.getstarted {
-  width: 337px;
-  height: 108px;
-  font-size: 32px;
+.About-btn {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  width: 200px;
+  height: 4rem;
+  font-size: 1.25rem;
   border-radius: 54.5rem;
-  border: 0;
-  color: #390b3a;
-}
-.getstarted:hover {
   background-color: #390b3a;
   color: white;
-  border-radius: 54.5rem;
-} */
+  font-size: 1.5rem;
+}
+.About-btn:hover {
+  background-color: white;
+  color: #481f4a;
+}
+.Vmv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #390b3a;
+  line-height: 27px;
+  gap: 2px;
+
+}
+
+.vision,
+.mission {
+  background-color: white;
+  width: 405px;
+  height: 350px;
+  border-radius: 20px;
+  margin-top: 4rem;
+}
+.vision {
+  margin: 4rem 0 0 12rem;
+}
+.mission {
+  margin: 4rem 12rem 0 0;
+}
+
+.values {
+  background-color: white;
+  width: 500px;
+  height: 470px;
+  border-radius: 20px;
+  margin: 8rem 13% 0;
+}
+.vision-h2,
+.vision-p,
+.mission-h2,
+.mission-p,
+.values-h2,
+.values-p {
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top:1rem;
+}
+.about-h2 {
+  padding-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+.about-p{
+  border: 1px red solid;
+  align-content: center;
+}
+.About-btn {
+  margin-top: 2rem;
+}
+
+.about-icon{
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0;
+  height: 91px;
+  width: 93px;
+}
+/*3rd section
+.Products-and-services{
+  background-color: white;
+  border: 1px solid red;
+}
+.Pas-h2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #390b3a;
+}
+.pas-cnt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anuwai{
+  background-color: #F5E8F9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1097px;
+  height: 330px;
+  color: #390b3a;
+  line-height: 25px;
+  align-items: center;
+  border-radius: 20px;
+}
+.Anuwai-h3{
+  border: 1px solid red ;
+ 
+}*/
+
+
