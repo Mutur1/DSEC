@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: Forum-Regular;
+  src: url("assets/fonts/Forum-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -11,9 +17,8 @@ body {
   font-family: "Baguede";
   height: 100vh;
 }
-p {
-  font-size: 1rem;
-}
+
+
 h2 {
   font-size: 2.5rem;
 }
@@ -27,8 +32,10 @@ h2 {
   border: none;
   width: 260px;
   height: 4rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  background-color: white;
   color: #390b3a;
+  font-family: "baguede";
 }
 .dsec-btn:hover {
   background-color: #390b3a;
@@ -36,7 +43,7 @@ h2 {
 }
 
 /* All btns here */
-.about-btn {
+.about-btn{
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -47,18 +54,21 @@ h2 {
   font-size: 1.25rem;
   border-radius: 54.5rem;
   background-color: #390b3a;
+  font-family: "baguede";
   color: white;
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
 
 .about-btn:hover {
   background-color: white;
-  color: #481f4a;
+  color: #390b3a;
 }
 
 .hero {
   background-image: url("assets/img/HeroBg_Svg.svg");
   padding: 5rem;
+
 }
 nav {
   height: 5rem;
@@ -68,7 +78,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   border-radius: 46.5px;
-  padding: 0 2rem;
+  padding:  1rem;
 }
 
 nav img {
@@ -76,11 +86,12 @@ nav img {
 }
 
 nav ul {
+  background-color: #481f4a;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
 }
 
 nav li {
@@ -113,7 +124,6 @@ li a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   justify-content: space-between;
 }
 
@@ -121,14 +131,12 @@ li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-size: 6.5rem;
+  color: white;
+  line-height: 6.5rem;
   /* margin-top: -rem; */
 }
 
-.descr .text p {
-  font-size: 6rem;
-  color: white;
-  line-height: 5.5rem;
-}
 
 .descr img {
   height: 36rem;
@@ -153,7 +161,9 @@ li a:hover {
 }
 
 .about p {
-  /* //Style accordingly */
+  text-align: center;
+  color: #390b3a;
+  width: 80%;
 }
 
 /* .vision-h2,
@@ -183,6 +193,7 @@ li a:hover {
 */
 
 .vision-mission-values {
+  border: 1px red solid;
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr;
@@ -202,16 +213,36 @@ li a:hover {
   }
 }
 
+
 .card {
   background-color: white;
+  color: #390b3a;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 20px;
   padding: 5%;
 }
+.card p{
+  text-align:left;
+  font-size: 1.3rem;
+  width: 100%;
+  padding-left:1rem ;
+  font-family: "forum-regular";
+}
+.card h2{
+  margin: 0.5rem 0;
+   padding-left:1rem ;
+}
+.card ul{
+  padding-left:1.5rem ;
+  width: 80%;
+  font-family: "forum-regular";
+  font-size: 1.5rem;
+}
 
 .about-icon {
+  padding-bottom: 0.5rem;
   height: 91px;
   width: 93px;
 }
@@ -219,31 +250,75 @@ li a:hover {
 /*3rd section */
 .Products-and-services {
   background-color: white;
-}
-.Pas-h2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #390b3a;
-}
-.pas-cnt {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.anuwai {
-  background-color: #f5e8f9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1097px;
-  height: 330px;
+.Products-and-services h2{
   color: #390b3a;
-  line-height: 25px;
+}
+.products-cards{
+  display: grid;
+  gap:3rem ;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  margin: 3rem;
+}
+.anuwai{
+  border: 1px red solid;
+  background-color: #f4defa;
+  display:grid;
+  gap: 2rem;
+  grid-template-columns:1fr;
+  grid-template-rows: 2fr;
+  
+
+}
+.cards-img{
+  display: flex;
+
+}
+.cards-content{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-end;
+}
+.anuwai img{
+  height: 200px;
+  width: 225px;
+}
+.anuwai h3{
+  height: 50px;
+  font-size: 1.5rem;
+  line-height: 1.1rem;
+  color: #390b3a;
+ 
+}
+.anuwai p{
+  font-family: "forum-regular";
+  color: #390b3a;
+}
+.cards-btn{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
   align-items: center;
-  border-radius: 20px;
+  border: none;
+  width: 120px;
+  height: 3rem;
+  font-size: 1.25rem;
+  border-radius: 54.5rem;
+  background-color: white;
+  font-family: "baguede";
+  color:#390b3a;
+  font-size: 1rem;
+
+
 }
-.Anuwai-h3 {
-  border: 1px solid red;
+.cards-btn:hover{
+  background-color: #390b3a;
+  color: white;
 }
+
+ 
+}*/
