@@ -10,6 +10,9 @@
   font-weight: normal;
   font-style: normal;
 }
+*{
+  image-rendering: auto;
+}
 
 body {
   margin: 0;
@@ -73,6 +76,7 @@ h2 {
 nav {
   height: 5rem;
   background-color: #481f4a;
+  opacity: 86%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -97,6 +101,7 @@ nav ul {
 nav li {
   display: flex;
   justify-content: space-between;
+  font-family: "baguede";
 }
 
 li a {
@@ -212,7 +217,14 @@ li a:hover {
     justify-self: center;
   }
 }
-
+@media(max-width: 480px){
+  .vision-mission-values{
+    margin: 0.5rem;
+  }
+  .text{
+    font-size:16px ;
+  }
+}
 
 .card {
   background-color: white;
@@ -229,6 +241,8 @@ li a:hover {
   width: 100%;
   padding-left:1rem ;
   font-family: "forum-regular";
+  color: #390b3a
+  ;
 }
 .card h2{
   margin: 0.5rem 0;
@@ -256,47 +270,70 @@ li a:hover {
 }
 .Products-and-services h2{
   color: #390b3a;
+  text-align: center;
 }
 .products-cards{
   display: grid;
   gap:3rem ;
   grid-template-columns: 1fr;
-  grid-template-rows: 4fr;
-  margin: 3rem;
+  grid-template-rows: auto;
+  margin: 4rem;
 }
-.anuwai{
-  border: 1px red solid;
+@media (min-width: 768px) {
+  .Products-and-services {
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(4, auto);
+  }
+}
+
+.cards{
   background-color: #f4defa;
   display:grid;
   gap: 2rem;
-  grid-template-columns:1fr;
-  grid-template-rows: 2fr;
-  
-
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr;
+  border-radius: 35px;
 }
+@media(max-width: 480px){
+  .cards{
+    grid-template-columns: repeat(1,auto);
+    grid-template-rows: repeat(2,auto) ;
+    margin: rem;
+  }
+}
+
 .cards-img{
   display: flex;
-
+  padding: 6%;
+  border: 1px red solid;
+  justify-content: center;
+  align-items: center;
 }
-.cards-content{
+.content{
+  border: 1px red solid;
   display: flex;
   flex-direction:column;
-  align-items: flex-end;
+  justify-items: center;
+  padding: 2.5em;
+  line-height: 1.6rem;
 }
-.anuwai img{
-  height: 200px;
-  width: 225px;
-}
-.anuwai h3{
+/*.product-img{
+  width: 332px;
+  height: 272px;
+}*/
+
+.cards h3{
   height: 50px;
-  font-size: 1.5rem;
-  line-height: 1.1rem;
+  font-size: 2rem;
+  line-height: 1.5rem;
   color: #390b3a;
- 
+  width: 50%;
 }
-.anuwai p{
+.cards p, li {
   font-family: "forum-regular";
   color: #390b3a;
+  width: 70%;
+ font-size: 1.4rem;
 }
 .cards-btn{
   display: flex;
@@ -319,6 +356,43 @@ li a:hover {
   background-color: #390b3a;
   color: white;
 }
-
- 
-}*/
+/* 4th section*/
+.reach-out{
+  background-color: #f4defa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+}
+.reach-out h2{
+  text-align:center;
+  color: #390b3a;
+}
+.reach-out p{
+  text-align:center;
+  color: #390b3a;
+  font-family: "forum-Regular";
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  width: 75%;
+}
+.contacts-btn{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  border: none;
+  width: 200px;
+  height: 4rem;
+  font-size: 1.25rem;
+  border-radius: 54.5rem;
+  background-color: white;
+  font-family: "baguede";
+  color:#390b3a;
+  font-size: 1rem;
+}
+.contacts-btn:hover{
+  background-color: #390b3a;
+  color: white;
+}
