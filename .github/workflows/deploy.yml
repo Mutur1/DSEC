@@ -17,10 +17,10 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Adjust this if your files are in a subfolder (e.g., ./docs)
-          destination_dir: ${{ github.ref_name }}  # Deploys to a folder named after the branch (dev or prod)
-          publish_branch: gh-pages  # The branch where Pages will read from
-          keep_files: true  # Keeps existing files to allow dev and prod coexistence
+          publish_dir: ./
+          destination_dir: ${{ github.ref_name }}
+          publish_branch: dev
+          keep_files: true 
 
       - name: Set Pages URL
         run: |
