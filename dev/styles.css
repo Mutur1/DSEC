@@ -64,6 +64,7 @@ h2 {
   color: white;
   font-size: 1.5rem;
   margin-top: 2rem;
+  text-decoration: none;
 }
 
 .about-btn:hover {
@@ -106,7 +107,6 @@ nav ul {
 }
 
 nav li {
-
   display: flex;
   justify-content: space-between;
   font-family: "baguede";
@@ -195,7 +195,6 @@ nav li a:hover {
   color: #390b3a;
   width: 80%;
 }
-
 
 .vision-mission-values {
   display: grid;
@@ -366,6 +365,7 @@ nav li a:hover {
   color: #390b3a;
   font-size: 1rem;
   margin-bottom: 2rem;
+  text-decoration: none;
 }
 .cards-btn:hover {
   background-color: #390b3a;
@@ -411,6 +411,7 @@ nav li a:hover {
   font-family: "baguede";
   color: #390b3a;
   font-size: 1rem;
+  text-decoration: none;
 }
 .contacts-btn:hover {
   background-color: #390b3a;
@@ -476,6 +477,7 @@ nav li a:hover {
   font-family: "baguede";
   color: #390b3a;
   font-size: 1rem;
+  text-decoration: none;
 }
 .consultation-btn:hover {
   background-color: #f1b04c;
@@ -642,18 +644,17 @@ footer {
   width: 85%;
   align-self: center;
 }
-.socialmedia{
+.socialmedia {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self: flex-start;
   margin-left: 7.5%;
+  gap: 1rem;
 }
-.icon{
-  border: 1px red solid;
+.icon {
   display: flex;
   flex-direction: row;
-  
 }
 
 .copyright {
@@ -688,7 +689,8 @@ footer {
   }
 
   .socialmedia {
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
   }
 }
