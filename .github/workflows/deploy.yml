@@ -1,0 +1,27 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - dev
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Adjust this if your files are in a subfolder (e.g., ./docs)
+          destination_dir: ${{ github.ref_name }}  # Deploys to a folder named after the branch (dev or prod)
+          publish_branch: gh-pages  # The branch where Pages will read from
+          keep_files: true  # Keeps existing files to allow dev and prod coexistence
+
+      - name: Set Pages URL
+        run: |
+          echo "Deployed to https://${{ github.muturi1 }}.github.io/${{ github.repository }}/${{ github.ref_name }}/"
