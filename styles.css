@@ -170,10 +170,9 @@ nav li a:hover {
 .about-us {
   background-color: #f4defa;
   padding: 2rem;
-}
-@media (max-width: 480px) {
-  .about-us {
-    padding: 1rem 1rem;
+
+  @media (max-width: 767px) {
+    padding: 1rem;
   }
 }
 .about {
@@ -233,18 +232,21 @@ nav li a:hover {
   justify-content: center;
   border-radius: 20px;
   padding: 5%;
+  align-items: start;
+
+  @media (max-width: 767px) {
+    /* border: 1px solid red; */
+  }
 }
 .card p {
   text-align: left;
   font-size: 1.3rem;
   width: 100%;
-  padding-left: 1rem;
   font-family: "forum-regular";
   color: #390b3a;
 }
 .card h2 {
   margin: 0.5rem 0;
-  padding-left: 1rem;
 }
 .card ul {
   padding-left: 1.5rem;
@@ -495,7 +497,7 @@ nav li a:hover {
     text-align: center;
     margin: 3rem;
   }
-  .consultation-content,
+  /* .contacts .consultation-content,
   h3,
   h2 {
     display: flex;
@@ -506,7 +508,7 @@ nav li a:hover {
     text-align: center;
     width: 100%;
     line-height: 3rem;
-  }
+  } */
   .consultation-img {
     display: flex;
     flex-direction: column;
