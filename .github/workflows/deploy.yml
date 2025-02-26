@@ -21,3 +21,7 @@ jobs:
           destination_dir: ${{ github.ref_name }}  # dev or prod folder
           publish_branch: gh-pages 
           keep_files: true 
+          
+      - name: Set Pages URL
+        run: |
+          echo "Deployed to https://${{ github.muturi1 }}.github.io/${{ github.repository }}/${{ github.ref_name }}/"
