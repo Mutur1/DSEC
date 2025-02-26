@@ -101,11 +101,12 @@ nav ul {
   justify-content: space-between;
   margin: 0;
   padding: 0.2rem;
-  padding-right: 2rem;
+  padding-right: 0.3rem;
   border-radius: 46.5px;
 }
 
 nav li {
+
   display: flex;
   justify-content: space-between;
   font-family: "baguede";
@@ -162,7 +163,6 @@ nav li a:hover {
   margin-right: 2rem;
   width: 495px;
   height: 614px;
-  /* border: 1px red solid; */
 }
 
 /* About Us section*/
@@ -189,6 +189,8 @@ nav li a:hover {
 }
 
 .about p {
+  font-family: "forum-regular";
+  font-size: 1.3rem;
   text-align: center;
   color: #390b3a;
   width: 80%;
@@ -646,13 +648,20 @@ footer {
   width: 85%;
   align-self: center;
 }
-.socialmedia {
+.socialmedia{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-self: flex-start;
   margin-left: 7.5%;
 }
+.icon{
+  border: 1px red solid;
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .copyright {
   display: flex;
   flex-direction: row;
