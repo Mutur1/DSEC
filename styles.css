@@ -295,7 +295,7 @@ nav li a:hover {
 @media (max-width: 768px) {
   .cards {
     grid-template-columns: 1fr;
-    padding: 4px;
+    
   }
   .content,
   h3 {
@@ -305,7 +305,6 @@ nav li a:hover {
     justify-items: center;
     justify-content: center;
     width: 100%;
-    padding: 0;
     margin: 0;
   }
 }
@@ -324,7 +323,6 @@ nav li a:hover {
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 0;
     margin: 0;
   }
 }
@@ -376,21 +374,43 @@ nav li a:hover {
   background-color: #390b3a;
   color: white;
 }
-/* 4th section*/
+/* Reach Out section*/
 .reach-out {
   background-color: #f4defa;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3.5%;
+  padding: 5%;
   text-align: center;
+}
+.reach-out-title-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    color: #390b3a;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 480px) {
+    
+    width: 100%;
+    font-size: 1.5rem;
+  }
 }
 
 .reach-out h2 {
   text-align: center;
   color: #390b3a;
   margin-bottom: -0.5rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .reach-out p {
