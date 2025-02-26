@@ -24,4 +24,4 @@ jobs:
           
       - name: Set Pages URL
         run: |
-          echo "Deployed to https://mutur1.github.io/${{ github.repository }}/${{ github.ref_name }}/"
+          echo "Deployed to https://mutur1.github.io/${{ github.ref_name }}/"
