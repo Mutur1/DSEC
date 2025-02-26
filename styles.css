@@ -455,6 +455,12 @@ nav li a:hover {
   border-radius: 20px;
   margin: 3%;
   padding: 2rem;
+  
+  @media (max-width: 768px) {
+  
+    
+  }
+  
 }
 
 .consultation-content {
