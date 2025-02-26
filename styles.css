@@ -369,6 +369,7 @@ nav li a:hover {
   font-family: "baguede";
   color: #390b3a;
   font-size: 1rem;
+  margin-bottom: 2rem;
 }
 .cards-btn:hover {
   background-color: #390b3a;
