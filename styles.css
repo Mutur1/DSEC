@@ -169,9 +169,10 @@ nav li a:hover {
 .about-us {
   background-color: #f4defa;
   padding: 2rem;
-
-  @media (max-width: 767px) {
-    padding: 0;
+}
+@media (max-width: 480px) {
+  .about-us {
+    padding: 1rem 1rem;
   }
 }
 .about {
@@ -193,31 +194,6 @@ nav li a:hover {
   width: 80%;
 }
 
-/* .vision-h2,
-.vision-p,
-.mission-h2,
-.mission-p,
-.values-h2,
-.values-p {
-  padding-left: 2rem;
-  margin-bottom: 0.5rem;
-  margin-top: 1rem;
-}
-.about-h2 {
-  padding-top: 3rem;
-  margin-bottom: 0.5rem;
-}
-.about-p {
-  border: 1px red solid;
-  align-content: center;
-}
-.About-btn {
-  margin-top: 2rem;
-}
-
-
-
-*/
 
 .vision-mission-values {
   display: grid;
