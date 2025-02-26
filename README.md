@@ -25,14 +25,14 @@ Live URLs:
     Development: https://Mutur1.github.io/DSEC/dev/
     Production: https://Mutur1.github.io/DSEC/prod/
 
-Features
+#### Features
 
     - Responsive Design: Adapts to desktops, tablets, and mobile devices.
     - Service Highlights: Showcases cybersecurity offerings with clear calls-to-action.
     - Fast & Secure: Lightweight static site with no server-side dependencies.
     - Automated Deployment: CI/CD pipeline deploys changes to dev and prod environments.
 
-Folder Structure
+### Folder Structure
 ```shell
 DSEC/
 ├── .github/
@@ -43,14 +43,15 @@ DSEC/
 ├── index.html               # Main HTML file
 ├── styles.css               # CSS styling for the site
 └── README.md                
-```
 
+```
     - .github/workflows/deploy.yml: Defines the deployment pipeline to GitHub Pages.
     - assets/: Holds all static assets (add your images here).
     - index.html: The entry point of the website.
     - styles.css: Custom styles for layout and design.
 
 ## Getting Started
+
 #### Prerequisites
 
     Git: To clone and manage the repository.
@@ -111,12 +112,13 @@ The site is hosted on GitHub Pages:
         dev: https://Mutur1.github.io/DSEC/dev/
         prod: https://Mutur1.github.io/DSEC/ (or /prod/).
 
-To deploy updates:
+`To deploy updates:`
 
     Create a feature branch (e.g., feature/new-service):
     bash
 
 git checkout -b feature/new-service
+
 Commit and push changes:
 ```bash
 
