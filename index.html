@@ -13,9 +13,9 @@
        <a href="#Home"><img class="logo" src="assets/img/nav-logo.svg" /></a> 
         <ul>
           <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#explore">Explore</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="vision-mission-values">Explore</a></li>
+          <li><a href=".Products-and-services">Products</a></li>
+          <li><a href="footer">Contact</a></li>
         </ul>
       </nav>
       <div class="descr">
@@ -203,20 +203,24 @@
             <ul>
               <li>P.O. BOX 44848 – 00100</li>
               <li>Nairobi, Kenya</li>
-              <li><a href="#email">hello@dsec.co.ke</a></li>
-              <li><a href="#contact"> +254 746 191 652</a></li>
+              <li><a href="mailto:hello@dsec.co.ke" target="_blank">hello@dsec.co.ke</a></li>
+              <li><a href="tell+254 746 191 652" target="_blank"> +254 746 191 652</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="hr-line"></div>
       <div class="socialmedia">
-        <img src="assets/img/socialmedia-icons.svg" alt="" />
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.svg" alt="instagram"></a>
+       <a href="https://www.facebook.com/"  target="_blank"> <img src="assets/img/facebook.svg" alt="facebook"></a>
+        <a href="https://ke.linkedin.com/"  target="_blank"><img src="assets/img/linked in.svg" alt="linkedin"></a>
+        <a href="https://x.com/?lang=en"  target="_blank"><img src="assets/img/twitter x.svg" alt="x"></a>
+
       </div>
       <div class="copyright">
-        <p>DSEC Copyright ©2025. All Rights Reserved.</p>
+        <p>DSEC Copyright <span id="year">©2025.</span> All Rights Reserved.</p>
         <script>
-          const yearElement = document.querySelector('.copyright');
+          const yearElement = document.querySelector('#year');
           const currentYear = new Date().getFullYear();
           yearElement.textContent = currentYear;
         </script>
