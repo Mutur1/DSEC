@@ -1,4 +1,4 @@
-#DSEC Cybersecurity Website
+# DSEC Cybersecurity Website
 
 - Welcome to DSEC, your trusted partner in safeguarding digital assets. This repository hosts the source code for our static website, built with HTML, CSS & JavaScript, and deployed via a CI/CD pipeline to GitHub Pages. 
 - Our mission is to provide top-tier cybersecurity solutions—explore our services and see how we can protect your business from evolving threats.
