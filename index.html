@@ -10,14 +10,27 @@
   <body>
     <section class="hero" id="home">
       <nav>
-        <a href="#home"><img class="logo" src="assets/img/nav-logo.svg" /></a>
-        <ul>
+        <ul class="sidebar">
+       
+         <li class="closebutton" onclick= hideSidebar()><a href="#"><img src="assets/img/cross.png" alt="" ></a></li>
           <li><a href="#home" class="active" target="_blank">Home</a></li>
           <li><a href="vision-mission-values" target="_blank">Explore</a></li>
           <li><a href=".Products-and-services" target="_blank">Products</a></li>
           <li><a href="footer" target="_blank">Contact</a></li>
         </ul>
+
+       <a href="#home" class="hideonmobile"><img class="logo" src="assets/img/nav-logo.svg"/></a> 
+        <ul >
+          <li class="hidesidebar"><a href="#home" class="active" target="_blank">Home</a></li>
+          <li class="hidesidebar"><a href="vision-mission-values" target="_blank">Explore</a></li>
+          <li class="hidesidebar"><a href=".Products-and-services"target="_blank">Products</a></li>
+          <li class="hidesidebar"><a href="footer" target="_blank">Contact</a></li>
+          <li class="menubutton" onclick= showSidebar()><a href="#"><img src="assets/img/burger-menu.png" alt=""></a></li>
+        </ul>
       </nav>
+
+      
+
       <div class="descr">
         <div class="text">
           <p>Defensive Cybersecurity Solutions</p>
@@ -245,5 +258,15 @@
         </script>
       </div>
     </footer>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
   </body>
 </html>
