@@ -617,7 +617,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 3%;
+  /* margin-left: 3%; */
 }
 .footer-links {
   display: flex;
@@ -683,6 +683,10 @@ footer {
   background: white;
   width: 85%;
   align-self: center;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 .socialmedia {
   display: flex;
