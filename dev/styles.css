@@ -87,6 +87,8 @@ nav {
   justify-content: space-between;
   border-radius: 70px;
   padding: 2rem;
+  border: 1px solid red;
+
 }
 
 nav img {
@@ -131,6 +133,46 @@ nav li a:hover {
   background-color: #f1b04c;
   color: #390b3a;
   border-radius: 30px;
+}
+.sidebar{
+  position:fixed;
+  top: 0;
+  right: 0;
+  height: 92%;
+  width: 15.9rem;
+  z-index: 999;
+  background-color: #390b3a80;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menubutton{
+  display: none;
+  
+}
+@media(max-width: 992px){
+  .hidesidebar{
+    display: none;
+    border-radius: 0;
+  }
+  .menubutton{
+    display: block;
+  }
+}
+@media(max-width: 480px){
+  .sidebar{
+    width: 100%;
+    height: 112%;
+    border-radius: 0;
+  }
 }
 
 .hero .descr {
