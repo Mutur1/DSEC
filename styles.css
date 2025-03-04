@@ -30,7 +30,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-self: flex-start;
+  align-self: flex-end;
   cursor: pointer;
   align-items: center;
   border: none;
@@ -40,8 +40,9 @@ h2 {
   background: linear-gradient(white 52%, #f4defa 100%);
   color: #390b3a;
   font-family: "baguede";
-  margin-left: 1rem;
-  margin-top: -4.5rem;
+  margin-right: 90rem;
+  margin-bottom: 5rem;
+  margin-top: -9rem;
 }
 .dsec-btn:hover {
   background: #390b3a;
@@ -175,7 +176,6 @@ nav li a:hover {
   }
 }
 
-
 .hero .descr {
   display: flex;
   flex-direction: row;
@@ -188,79 +188,71 @@ nav li a:hover {
 .descr .text {
   font-size: 6.5rem;
   color: white;
-  line-height: 6.5rem;
-  width: 70%;
+  line-height: 7rem;
+  width: 50%;
   text-align: left;
-  margin: 0;
+  margin-top: -6rem;
   padding: 0;
 }
-
-.descr-img {
-  width: 495px;
-  height: 614px;
+.laptop{
+  margin-top: 4rem;
+  z-index: 100;
 }
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   .hero {
     padding: 3rem;
   }
   nav{
     border-radius: 30px;
     padding-left: 0;
-  }
-
-  .descr {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
 
   .descr .text {
     text-align: center;
     font-size: 3.5rem;
     line-height: 3rem;
-    width: 90%;
+    width: 72%;
     display: flex;
     flex-direction: row;
     align-self: end;
-    padding-bottom: 4rem;
-    margin: 3rem 1rem 1rem -4rem;
+    align-content: center;
+    padding-bottom: 7rem;
+    margin: 0rem 8rem 1rem 4rem; 
   }
   .dsec-btn {
     display: flex;
     flex-direction: row;
-    align-self: end;
     font-size: 1.2rem;
     height: 3.5rem;
-    margin-bottom: -1rem;
-    margin-left: -34rem;
+    margin-left: 6rem;
   }
 
   .descr-img {
-    width: 80%;
-    height: auto;
     flex-direction: row;
     justify-items: center;
     align-self: flex-start;
-    margin-left: -30rem;
-    padding-bottom: 10rem;
-    padding-right: 6.5rem;
-    z-index: 998;
+     margin-left: -31rem;
+   padding-bottom: 15rem;
   }
   .sidebar{
     height: 105%;
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 480px){
   .hero {
     padding: 3rem;
   }
   nav{
     border-radius: 30px;
-    padding-left: 0;
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+    margin-left: -1rem;
   }
 
   .descr {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -268,36 +260,36 @@ nav li a:hover {
 
   .descr .text {
     text-align: center;
-    font-size: rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     width: 90%;
     display: flex;
     flex-direction: row;
     align-self: end;
-    padding-bottom: 4rem;
-    margin: 3rem 1rem 1rem -4rem;
+    padding-bottom: 7rem;
+    margin: 3rem -2rem 1rem -1rem;
   }
   .dsec-btn {
     display: flex;
-    flex-direction: row;
-    align-self: end;
+    flex-direction: column;
+    align-self: flex-start;
     font-size: 1.2rem;
     height: 3.5rem;
-    margin-bottom: -1rem;
-    margin-left: -36rem;
+    margin-left: 3rem;
+    width: 10rem;
   }
 
   .descr-img {
+    display: flex;
     flex-direction: row;
-    justify-items: center;
-    align-self: flex-start;
-    margin-left: -30rem;
-    padding-bottom: 10rem;
-    padding-right: 6.5rem;
-    z-index: 998;
+    justify-content: center;
+    margin-left: -8rem;
+  }
+  .laptop{
+    width: 320px;
   }
   .sidebar{
-    height: 105%;
+    height: 94%;
   }
 } 
 
@@ -442,6 +434,7 @@ nav li a:hover {
   }
   .Products-and-services h2{
     font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -701,6 +694,12 @@ nav li a:hover {
     align-content: center;
     flex-wrap: wrap;
   }
+  .reach-out-title-mobile h3{
+    font-size: 2.5rem;
+  }
+  .stars{
+    width: 2rem;
+  }
 }
 
 /*Footer*/
@@ -717,7 +716,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* margin-left: 3%; */
 }
 .footer-links {
   display: flex;
@@ -843,16 +841,32 @@ footer {
   .footer-logo{
     display: flex;
     flex-direction: column;
-    align-self: flex-start;
+    padding-top: 2rem;
   }
+.dsec-footer{
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-right:17rem;
+  padding-bottom: 0.5rem;
+}
+
   .footer-links {
-    gap: 1rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-self: center;
+    padding: 0;
   }
 
   .links ul,
   .address ul {
-    text-align: center;
-    padding: 0;
+    text-align: left;
+    width: 70%;
+  }
+  .links{
+    margin-right: 6rem;
   }
 
   .links li a,
@@ -863,5 +877,11 @@ footer {
   .copyright {
     font-size: 12px;
     padding: 0.5rem;
+  }
+  .socialmedia{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 0;
   }
 }
