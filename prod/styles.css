@@ -64,7 +64,7 @@ h2 {
   font-family: "baguede";
   color: white;
   font-size: 1.5rem;
-  margin-top: 2rem;
+  margin: 1rem 0;
   text-decoration: none;
 }
 
@@ -170,7 +170,7 @@ nav li a:hover {
   .hero {
     padding: 3rem;
   }
-  nav{
+  nav {
     border-radius: 30px;
     padding-left: 0;
   }
@@ -194,7 +194,7 @@ nav li a:hover {
   margin-top: -6rem;
   padding: 0;
 }
-.laptop{
+.laptop {
   margin-top: 4rem;
   z-index: 100;
 }
@@ -203,7 +203,7 @@ nav li a:hover {
   .hero {
     padding: 3rem;
   }
-  nav{
+  nav {
     border-radius: 30px;
     padding-left: 0;
   }
@@ -218,7 +218,7 @@ nav li a:hover {
     align-self: end;
     align-content: center;
     padding-bottom: 7rem;
-    margin: 0rem 8rem 1rem 4rem; 
+    margin: 0rem 8rem 1rem 4rem;
   }
   .dsec-btn {
     display: flex;
@@ -232,19 +232,19 @@ nav li a:hover {
     flex-direction: row;
     justify-items: center;
     align-self: flex-start;
-     margin-left: -31rem;
-   padding-bottom: 15rem;
+    margin-left: -31rem;
+    padding-bottom: 15rem;
   }
-  .sidebar{
+  .sidebar {
     height: 105%;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .hero {
     padding: 3rem;
   }
-  nav{
+  nav {
     border-radius: 30px;
     width: 100%;
     padding: 0.5rem 2rem 0.5rem 0rem;
@@ -285,13 +285,13 @@ nav li a:hover {
     justify-content: center;
     margin-left: -8rem;
   }
-  .laptop{
+  .laptop {
     width: 320px;
   }
-  .sidebar{
+  .sidebar {
     height: 94%;
   }
-} 
+}
 
 /* About Us section*/
 .about-us {
@@ -432,7 +432,11 @@ nav li a:hover {
     margin: 0;
     text-align: center;
   }
-  .Products-and-services h2{
+
+  .Products-and-services {
+    padding: 1.5rem;
+  }
+  .Products-and-services h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
@@ -454,7 +458,7 @@ nav li a:hover {
     width: 100%;
     margin: 0;
   }
-  .content h2{
+  .content h2 {
     font-size: 4rem;
   }
 }
@@ -462,6 +466,10 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cards-img img {
+  width: 100%;
 }
 .content {
   display: flex;
@@ -694,10 +702,10 @@ nav li a:hover {
     align-content: center;
     flex-wrap: wrap;
   }
-  .reach-out-title-mobile h3{
+  .reach-out-title-mobile h3 {
     font-size: 2.5rem;
   }
-  .stars{
+  .stars {
     width: 2rem;
   }
 }
@@ -838,18 +846,18 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .footer-logo{
+  .footer-logo {
     display: flex;
     flex-direction: column;
     padding-top: 2rem;
   }
-.dsec-footer{
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding-right:17rem;
-  padding-bottom: 0.5rem;
-}
+  .dsec-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-right: 17rem;
+    padding-bottom: 0.5rem;
+  }
 
   .footer-links {
     gap: 3rem;
@@ -865,7 +873,7 @@ footer {
     text-align: left;
     width: 70%;
   }
-  .links{
+  .links {
     margin-right: 6rem;
   }
 
@@ -878,7 +886,7 @@ footer {
     font-size: 12px;
     padding: 0.5rem;
   }
-  .socialmedia{
+  .socialmedia {
     display: flex;
     flex-direction: row;
     align-self: center;
